@@ -8,6 +8,13 @@ body {
     overflow: hidden;
     /* margin-left: 8%; */
 }
+.header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn-magazine.nutrabay.com/wp-content/uploads/2023/02/strong-bodybuilder-doing-heavy-weight-exercise-back-machine-1.jpg");
+}
 .home-section {
     padding-right: 500px;
     padding-top: 20px;
@@ -17,7 +24,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #687aaf;
+    background-color: transparent;
     padding-right: 5%;
     padding-left: 4%;
 }
@@ -41,6 +48,7 @@ nav div a::after {
 }
 .container {
     margin: 0 5rem;
+    padding-top: 4rem;
 }
 .card {
     margin-top: 20px;

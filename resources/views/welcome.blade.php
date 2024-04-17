@@ -9,36 +9,52 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo"> <img src="{{ asset('images/logo.png') }}" alt="Logo" style="height: 60px">
-        </div>
-        <div style="display:flex; align-items:center;">
-            <!-- <Header> -->
-            <a href="*">Home</a>
-            <a href="*">About Us</a>
-            <a href="*">Our Services</a>
-            <a href="*">Contact Us</a>
-            <a href="*">Join Now </a>
-            <!-- </Header> -->
+    <div class="header">
+        <nav>
+            <div class="logo"> <img src="{{ asset('images/logo.png') }}" alt="Logo" style="height: 60px">
+            </div>
+            <div style="display:flex; align-items:center;">
+                <!-- <Header> -->
+                <a href="*">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#service">Our Services</a>
+                <a href="*">Contact Us</a>
+                <a href="*">Join Now </a>
+                <!-- </Header> -->
 
+            </div>
+        </nav>
+        <div
+            style="margin-top:25%;font-size: 2rem; padding: 20px; text-align: center;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);">
+            <span style="color: #E31C37; font-size:3rem;">Now Open!</span>
+            <div style="font-size: 2rem; color:; padding-top: 1rem"> Reach your fitness goals
+                with
+                us!
+            </div>
         </div>
-    </nav>
-    <div style="text-align: center; font-size: 2rem; margin-top:2rem">
-        <span style="color: #E31C37">Now Open!</span>
-        <div style="font-size: 1.5rem; color:#555555"> Reach your fitness goals
-            with
-            us!
-        </div>
+        <div><img src="" alt=""></div>
     </div>
     <div class="container">
         <main>
-            <div><img
-                    src="https://cdn-magazine.nutrabay.com/wp-content/uploads/2023/02/strong-bodybuilder-doing-heavy-weight-exercise-back-machine-1.jpg"
-                    alt=""></div>
-            {{-- <h2 style="font-size: 2.3rem; color:#E31C37; font-weight: bolder">Location</h2>
-            <p style="color: #555555; font-size: 20px; font-weight:bold">Siddhipur, Mahalaxmi</p> --}}
+            <div id="about">
+                <div style="text-align: center">
+                    <h2 style="font-size: 2.3rem; color:#E31C37; font-weight: bolder">About Us</h2>
+                    <span style="font-size: 20px">Welcome to [Gym Name], where passion meets fitness. Our inclusive
+                        community and expert
+                        trainers
+                        are dedicated to helping you achieve your goals. With cutting-edge facilities, personalized
+                        programs, and vibrant group classes, we're here to support your journey to wellness. Join us and
+                        let's make every workout count together at [Gym Name]. Welcome to the family!</span>
+                </div>
+                <h3 style="font-size: 2.3rem; color:#E31C37; font-weight: bolder">Location</h3>
+                <p style="color: #555555; font-size: 20px; font-weight:bold">Siddhipur, Mahalaxmi</p>
+            </div>
 
-            <h2 style="font-size: 2rem; text-align:center; color:#E31C37"> Unlock Your Potential</h2>
+            <h2 id="service" style="font-size: 2rem; text-align:center; color:#E31C37"> Unlock Your Potential</h2>
             <p style="font-size:18px; color:rgb(92, 91, 91); text-align:center">Get access to state-of-the-art
                 equipment, diverse classes,
                 and expert
