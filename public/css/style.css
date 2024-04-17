@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+    width: 100px;
+    height: 80px;
+    overflow: hidden;
+    /* margin-left: 8%; */
+}
+.home-section {
+    padding-right: 500px;
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-bottom: 40px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #687aaf;
+    padding-right: 5%;
+    padding-left: 4%;
+}
+nav div a {
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffff;
+    margin: 10px 20px;
+    font-size: 18px;
+    position: relative;
+}
+nav div a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: 510px;
+}
+.container {
+    margin: 0 5rem;
+}
+.card {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.basic {
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    gap: 5rem;
+}
+.program {
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    gap: 5rem;
+}
+div.program {
+    justify-content: center;
+}
+/* <---------------Learn More----------------------> */
+.tab-titles {
+    display: flex;
+    margin: 20px 40px;
+}
+.tab-links {
+    margin-right: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+}
+.premiummember {
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    gap: 5rem;
+}
+.premium {
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    gap: 5rem;
+}
+.membership-plans {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.membership-items {
+    width: 30%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.membership-items:hover {
+    transform: translate(0px, -16px);
+    color: #ffff;
+    background-color: #242331;
+}
+.membership-items h3 {
+    font-size: 2rem;
+}
+.membership-items:hover h3 {
+    color: #ff004f;
+}
+
+.membership-items:hover .membership-items h3::after {
+    color: #ff004f;
+}
