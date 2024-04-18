@@ -132,3 +132,12 @@ div.program {
 .membership-items:hover .membership-items h3::after {
     color: #ff004f;
 }
+.button {
+    padding: 1rem 4rem;
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color: #ffff;
+    background-color: #e31c37;
+}
