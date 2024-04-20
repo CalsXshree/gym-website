@@ -21,6 +21,7 @@
                 <a href="#home">Home</a>
                 <a href="#about">About Us</a>
                 <a href="#service">Our Services</a>
+                <a href="#community">Community</a>
                 <a href="*">Contact Us</a>
                 <a href="*">Join Now </a>
             </div>
@@ -118,25 +119,17 @@
             <a href="/services" style="display: flex;justify-content: center; margin: 2rem 0; text-decoration: none">
                 <div class="button" style="font-weight: bold; font-size: 20px">Register now</div>
             </a>
-            {{-- <---------------- here ---------------------> --}}
-            <h2>What Our Members Say</h2>
-            <p>Add testimonials from satisfied members here.</p>
-            <div class="tab-tittles">
-                <p class="tab-links">Learn More</p>
-            </div>
-
-            <div class="benefits">
-                <h2>MEMBER BENEFITS YOU WANT</h2>
-
-                <h1>AT A LOWER PRICE</h1>
-                <big>So many benefits. So little time.</big>
-                <div>
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo">
-                    <div></div>
-                </div>
-            </div>
+            <hr id="community">
+            {{-- <---------------- Our community ---------------------> --}}
+            <h2 style="text-align: center; font-size: 4rem; color: #E31C37">OUR COMMUNITY</h2>
+            <p style="font-size: 20px; text-align: center; margin-bottom: 3rem">
+                Step into our gym and step into a supportive family, where every member is valued. From beginners to
+                pros, we're united by a passion for fitness and a commitment to each other's success. Here,
+                encouragement flows as freely as the sweat, creating an atmosphere where everyone thrives. Join us and
+                experience the power of community in reaching your fitness goals.</p>
         </main>
     </div>
+    @include('ourCommunitySlider')
 </body>
 
 </html>

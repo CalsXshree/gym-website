@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('/services', function () {
     return view('slider');
 });
+Route::get('/our', function () {
+    return view('ourCommunitySlider');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
