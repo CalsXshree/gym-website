@@ -23,7 +23,7 @@
                 <a href="#service">Our Services</a>
                 <a href="#community">Community</a>
                 <a href="#contact">Contact Us</a>
-                <a href="*">Join Now </a>
+                <a href="/join">Join Now </a>
             </div>
         </nav>
         <div
@@ -116,7 +116,7 @@
                 Please contact us for details.</p>
 
             @include('slider')
-            <a href="/services" style="display: flex;justify-content: center; margin: 2rem 0; text-decoration: none">
+            <a href="/join" style="display: flex;justify-content: center; margin: 2rem 0; text-decoration: none">
                 <div class="button" style="font-weight: bold; font-size: 20px">Register now</div>
             </a>
             <hr id="community">
