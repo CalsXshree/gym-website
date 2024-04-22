@@ -17,11 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/services', function () {
-    return view('slider');
-});
-Route::get('/our', function () {
-    return view('ourCommunitySlider');
+
+Route::get('/join', function () {
+    return view('joinNow');
 });
 
 Route::get('/dashboard', function () {
