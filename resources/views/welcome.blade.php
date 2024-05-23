@@ -44,12 +44,12 @@
             <div>
                 <div style="text-align: center">
                     <h2 style="font-size: 2.3rem; color:#E31C37; font-weight: bolder">About Us</h2>
-                    <span style="font-size: 20px">Welcome to [Gym Name], where passion meets fitness. Our inclusive
+                    <span style="font-size: 20px">Welcome to CalsxShree, where passion meets fitness. Our inclusive
                         community and expert
                         trainers
                         are dedicated to helping you achieve your goals. With cutting-edge facilities, personalized
                         programs, and vibrant group classes, we're here to support your journey to wellness. Join us and
-                        let's make every workout count together at [Gym Name]. Welcome to the family!</span>
+                        let's make every workout count together at CalsxShree. Welcome to the family!</span>
                 </div>
                 <div style="display: flex; justify-content: space-around; margin: 3rem 0 4.5rem 0">
                     <div>
@@ -173,18 +173,19 @@
             </div>
         </div>
         <div class="form-style-2" style="width: 80%">
-            <form action="" method="post">
+            <form action="/mail" method="post">
+                @csrf
                 <label for="field1"><span>Name <span class="required">*</span></span><input type="text"
-                        class="input-field" name="field1" value="" /></label>
+                        class="input-field" name="name" value="" /></label>
                 <label for="field2"><span>Email <span class="required">*</span></span><input type="text"
-                        class="input-field" name="field2" value="" /></label>
-                <label for="field4"><span>Regarding</span><select name="field4" class="select-field">
+                        class="input-field" name="email" value="" /></label>
+                <label for="field4"><span>Regarding</span><select name="topic" class="select-field">
                         <option value="General Question">General</option>
                         <option value="Advertise">Advertisement</option>
                         <option value="Partnership">Partnership</option>
                     </select></label>
-                <label for="field5"><span>Message <span class="required">*</span></span>
-                    <textarea name="field5" class="textarea-field"></textarea>
+                <label for="message"><span>Message <span class="required">*</span></span>
+                    <textarea name="message" class="textarea-field"></textarea>
                 </label>
 
                 <label><span> </span><input type="submit" value="Submit" /></label>

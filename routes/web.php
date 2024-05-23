@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\JoinController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,8 +21,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/join', function () {
-    return view('joinNow');
+Route::resource('/join', JoinController::class);
+Route::resource('/mail', MailController::class);
+
+
+Route::get('/featured', function () {
+    return view('featured');
 });
 
 Route::get('/dashboard', function () {

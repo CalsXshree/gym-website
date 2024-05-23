@@ -81,15 +81,16 @@
         <div><img src="{{ asset('images/logo.png') }}" alt="Logo" style="height: 100%"></div>
         <div style="padding-top: 5rem; background-color: #010100; padding :5rem; border-radius: 20px; width: 45rem">
             <h2 style="color: #b0adad">Sign Up Form Membership</h2>
-            <form action="" style="display: flex; flex-direction: column; gap: 2rem">
+            <form action="/join" style="display: flex; flex-direction: column; gap: 2rem" method="POST">
+                @csrf
                 <input type="text" name="name" id="" placeholder="Enter Your Name" required>
                 <input type="email" name="email" id="" placeholder="Enter Your Email" required>
                 <select name="membersihip" id="" style="color: #757575">
-                    <option value="">Premium plus</option>
-                    <option value="">Premium</option>
-                    <option value="">Fitness</option>
-                    <option value="">Program</option>
-                    <option value="">Basic</option>
+                    <option value="premium_plus">Premium plus</option>
+                    <option value="premium">Premium</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="program">Program</option>
+                    <option value="basic">Basic</option>
                 </select>
                 <button type="submit">submit</button>
             </form>
