@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class JoinController extends Controller
 {
+    public function dashboard()
+    {
+        $membership = join::all();
+        return view('dashboard', compact('membership'));
+    }
+
     /**
      * Display a listing of the resource.
      */
