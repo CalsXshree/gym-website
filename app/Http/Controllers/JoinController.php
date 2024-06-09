@@ -65,8 +65,10 @@ class JoinController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(join $join)
+    public function destroy($id)
     {
-        //
+        $join = join::find($id);
+        $join->delete();
+        return redirect('/dashboard');
     }
 }
