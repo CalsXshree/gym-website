@@ -35,6 +35,8 @@ Route::get(
     [JoinController::class, 'dashboard']
 )->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::delete('dashboard/{id}', [JoinController::class, 'destroy'])->middleware(['auth', 'verified']);
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
